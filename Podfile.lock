@@ -1,0 +1,33 @@
+PODS:
+  - ConvenientFileManager (2.0.7)
+  - CoreDataServices (2.0.6):
+    - ConvenientFileManager (~> 2.0)
+  - EasyAlert (1.0.1)
+  - EasyDownloadSession (2.0.2)
+  - Fuzi (0.3.1)
+  - PureLayout (3.0.2)
+  - SimpleTableView (1.0.3):
+    - SimpleTableView/STVPaginatingView (= 1.0.3)
+  - SimpleTableView/STVPaginatingView (1.0.3):
+    - PureLayout
+
+DEPENDENCIES:
+  - CoreDataServices
+  - EasyAlert
+  - EasyDownloadSession (= 2.0.2)
+  - Fuzi (~> 0.3.0)
+  - PureLayout
+  - SimpleTableView (~> 1.0.3)
+
+SPEC CHECKSUMS:
+  ConvenientFileManager: fbe505538cff2822268d451e6c5644d5651d93d2
+  CoreDataServices: 2e5547400800d78218975abc8c094e69d6726b4f
+  EasyAlert: 837fa8d271786f3feedd83ca6bccc2e090abd091
+  EasyDownloadSession: 4a9f97482927db64c19c795edc0b4a4434cf9008
+  Fuzi: 25118b725a1637f1676f63ae1acbba1f30a5dd6c
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SimpleTableView: d5c86cffbe961311e4059e87a8c1550142470c71
+
+PODFILE CHECKSUM: 2ec2ed19a93fa81598d510206e8e8d82b6e1fbb8
+
+COCOAPODS: 1.0.0

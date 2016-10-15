@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  TVShowsReminder
+//
+//  Created by Javier Laguna on 02/08/2015.
+//
+//
+
+#ifndef TVShowsReminder_Prefix_pch
+#define TVShowsReminder_Prefix_pch
+
+#endif
+
+#ifdef DEBUG
+#define DLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define DLog(...)
+#endif
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+
+#import "TVShowsReminder-Swift.h"
+
+#endif

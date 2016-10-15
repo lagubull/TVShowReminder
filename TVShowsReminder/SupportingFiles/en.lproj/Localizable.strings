@@ -1,0 +1,23 @@
+/* 
+  TVShowsReminder.strings
+  TVShowsReminder
+
+  Created by Javier Laguna on 01/03/2016.
+
+*/
+
+"postsTitle" = "POSTS";
+
+"LoadingMessage" = "Loading";
+
+"CommentsMessageTitle" = "Info";
+
+"CommentsMessageBody" = "Comments feature is not implemented";
+
+"AcceptNav" = "Got It!";
+
+"FavoritesMessageTitle" = "Info";
+
+"FavoritesMessageBody" = "Favorites feature is not implemented";
+
+"NoContentBody" = "No content available.";
