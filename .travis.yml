@@ -1,4 +1,4 @@
-language: objective-c
+language: swift
    
 before_install:    
     - rvm use system
@@ -6,8 +6,5 @@ before_install:
 
 osx_image: xcode7.3
 
-notifications:
-  slack: unii:uiIBwCLf7BZh2scuao41N9by
-
 script:    
-    xctool -workspace SocialChallenge.xcworkspace -scheme SocialChallenge build -sdk iphonesimulator
+    xctool -workspace TVShowsReminder.xcworkspace -scheme TVShowsReminder build -sdk iphonesimulator
