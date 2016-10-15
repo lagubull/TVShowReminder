@@ -82,9 +82,9 @@ class ShowAdapter: NSObject, UITableViewDataSource, UITableViewDelegate, STVData
     lazy var sortDescriptorsForFetchRequest: Array <NSSortDescriptor> = {
         
         var postIdSort : NSSortDescriptor = NSSortDescriptor.init(key: "index", ascending: true)
-      //  var seasonIdSort : NSSortDescriptor = NSSortDescriptor.init(key: "season", ascending: true)
+        var seasonIdSort : NSSortDescriptor = NSSortDescriptor.init(key: "season", ascending: true)
         
-        return [postIdSort];
+        return [seasonIdSort, postIdSort];
     }()
     
     //MARK: HomeAdapterDelegate
@@ -133,7 +133,7 @@ class ShowAdapter: NSObject, UITableViewDataSource, UITableViewDelegate, STVData
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        let name = self.fetchedResultsController.sections![section].name
+        let name = fetchedResultsController.sections![section].name
         
         return "Season : \(name)"
     }
@@ -143,6 +143,13 @@ class ShowAdapter: NSObject, UITableViewDataSource, UITableViewDelegate, STVData
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
         return 60.0
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let episode = fetchedResultsController.objectAtIndexPath(indexPath) as! Episode
+        
+        print ("\(episode.season!)X\(episode.index!) - \(episode.title!)")
     }
     
     //MARK: CDSTableViewFetchedResultsControllerDataDelegate
@@ -156,7 +163,7 @@ class ShowAdapter: NSObject, UITableViewDataSource, UITableViewDelegate, STVData
     
     func configureCell(cell: EpisodeTableViewCell, indexPath: NSIndexPath) {
         
-        let episode = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Episode
+        let episode = fetchedResultsController.objectAtIndexPath(indexPath) as! Episode
         
         cell.updateWithEpisode(episode)
     }

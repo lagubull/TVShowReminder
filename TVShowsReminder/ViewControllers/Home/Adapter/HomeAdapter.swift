@@ -138,6 +138,7 @@ class HomeAdapter: NSObject, UITableViewDataSource, UITableViewDelegate, STVData
         ShowAPIManager.retrieveShow("lastmanonearth", success: nil, failure: nil)
         ShowAPIManager.retrieveShow("youretheworst", success: nil, failure: nil)
         ShowAPIManager.retrieveShow("reign", success: nil, failure: nil)
+        ShowAPIManager.retrieveShow("episodes", success: nil, failure: nil)
         
         ShowAPIManager.retrieveShow("homeland", success: { [weak self] (result: AnyObject?) in
             

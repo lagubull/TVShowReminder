@@ -66,7 +66,7 @@ class ShowViewController: UIViewController {
         _tableView.backgroundColor = .lightGrayColor()
         
         _tableView.separatorStyle = .None
-        _tableView.allowsSelection = false
+        //_tableView.allowsSelection = false
         _tableView.loadingView = self.loadingView
         _tableView.emptyView = self.emptyView
         
